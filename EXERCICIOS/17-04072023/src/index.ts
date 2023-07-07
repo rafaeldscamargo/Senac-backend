@@ -31,7 +31,6 @@ function cpfValidation(cpf: string): boolean {
         //console.log(sum) //185
         restForFitstDV = 11 - (sum % 11);
         //restForFitstDV = 11 - restForFitstDV;
-        console.log(restForFitstDV) ;
 
         if (restForFitstDV >= 10) {
             restForFitstDV = 0; //este é o  penultimo DV [9]
@@ -54,7 +53,7 @@ function cpfValidation(cpf: string): boolean {
         return true;
 }
 
-let result = cpfValidation('059.079.940-10');
+let result = cpfValidation('***.***.***-**');
 
 
 if (!result) {
